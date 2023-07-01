@@ -87,6 +87,9 @@ a {
   margin-top: 20px;
   background-color: white;
 }
+.header__logo:hover {
+  cursor: pointer;
+}
 .header-top::before {
   content: "";
   display: block;
@@ -189,6 +192,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
+  cursor: pointer;
 }
 .group-info {
   width: 400px;
@@ -221,6 +225,7 @@ a {
   margin-left: 42px;
   margin-right: 15px;
   border-radius: 999px;
+  cursor: pointer;
 }
 .group-imgs {
   position: relative;
@@ -287,6 +292,7 @@ a {
   border: none;
   border-radius: 999px;
   margin-left: 15px;
+  cursor: pointer;
 }
 .service-arrow__active {
   background-color: #143c3c;
@@ -865,6 +871,7 @@ a {
   height: 52px;
   border: 1px solid #265252;
   margin-right: 22px;
+  cursor: pointer;
 }
 .footer__list {
   display: grid;
