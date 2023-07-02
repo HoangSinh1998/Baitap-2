@@ -31,6 +31,13 @@ a {
   line-height: 58px;
   cursor: pointer;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  /* overflow: ellipsis; */
+  overflow: hidden;
+}
 .section-desc::before {
   display: block;
   content: "";
@@ -285,6 +292,10 @@ a {
   align-items: flex-end;
   justify-content: space-between;
 }
+.service-arrow__btn:hover {
+  background-color: #143c3c;
+  color: white;
+}
 .service-arrow__btn {
   width: 54px;
   height: 54px;
@@ -293,10 +304,9 @@ a {
   border-radius: 999px;
   margin-left: 15px;
   cursor: pointer;
+  color: #152427;
 }
-.service-arrow__active {
-  background-color: #143c3c;
-}
+
 /* CARD */
 .card__list {
   margin-top: 76px;
@@ -596,7 +606,9 @@ a {
   right: 100px;
   bottom: 22px;
 }
-
+.feature-right__arrow {
+  cursor: pointer;
+}
 .feature {
   padding: 116px 0 64px 0;
   background-color: #143c3c;
@@ -680,7 +692,7 @@ a {
 .customers-item:hover {
   box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
   transition: 0.3s;
-  border: transparent;
+  border: 1px solid transparent;
 }
 .customers-item {
   border-radius: 999px;
@@ -689,7 +701,7 @@ a {
   height: 362px;
   text-align: center;
   padding: 60px 43px;
-  border: 1.5px solid #cecece;
+  border: 1px solid #cecece;
   transition: 0.7s;
 }
 .customers-item:nth-child(2) {
@@ -801,8 +813,11 @@ a {
   font-weight: 600;
   line-height: 30px;
   margin-top: 13px;
-  padding-bottom: 38px;
-  border-bottom: 1px solid #c4c4c4;
+  /* margin-bottom: 38px; */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .blog-item__desc {
   color: var(--text-color-black-gray, #575d5e);
@@ -813,6 +828,8 @@ a {
   line-height: 12px;
   text-align: right;
   margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #c4c4c4;
 }
 /* FOOTER */
 .footer {
@@ -830,6 +847,9 @@ a {
   line-height: normal;
   margin-bottom: 25px;
   display: block;
+}
+.footer-input__arrow {
+  cursor: pointer;
 }
 .footer_input {
   display: inline-block;
@@ -863,6 +883,21 @@ a {
   display: flex;
   margin-top: 48px;
   flex-shrink: 0;
+}
+.footer-social__dot-logo::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  outline: 1px solid white;
+  left: 17px;
+  top: 12.5px;
+}
+.footer__social button:hover {
+  background-color: #a75325;
+  border: 1px solid transparent;
 }
 .footer__social button {
   background-color: transparent;
